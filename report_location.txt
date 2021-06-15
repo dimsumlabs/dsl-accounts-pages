@@ -1,0 +1,16 @@
+make[1]: Entering directory '/home/travis/build/dimsumlabs/dsl-accounts'
+git describe --always --dirty
+3715175
+
+./balance.py report_location
+
+TOTALS
+
+gary 0
+hamish 2704.61
+nic 6758.39
+paypal 478.15
+philip 1273.22
+unknown 0
+
+make[1]: Leaving directory '/home/travis/build/dimsumlabs/dsl-accounts'

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>dsl balance</title>
+<style>
+@font-face {
+  font-family: 'ps2p';
+  src: url('pressstart2p.ttf');
+}
+
+html {
+	background-color:#000;
+	font-family: ps2p,monospace;
+}
+
+body {
+    width:95%;
+    text-align:center;
+}
+
+.bill_desc {
+    font-size:30px;
+    color:#eee;
+    text-align:right;
+}
+
+.bill_value {
+    font-size:42px;
+    text-align:right;
+}
+
+.color_neg {
+    /* negative numbers are bad */
+    color:red;
+}
+
+.color_pos {
+    /* positive numbers are good */
+    color:#00E100;
+}
+
+.membership_fees {
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+}
+
+.grid {
+    font-size:17px;
+    color:#00E100;
+    text-align:left;
+    margin:0;
+    font-family: ps2p,monospace;
+}
+
+.donate {
+    font-size:25px;
+    color:pink;
+    text-align:center;
+}
+
+.lastupdate {
+    color:white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.rowodd {
+    background-color: #202020;
+}
+
+.tractorbar {
+    border-color: #404040;
+    background-image: url(circle.svg);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+.tractorleft {
+    border-style: none dotted none none;
+}
+
+.tractorright {
+    border-style: none none none dotted;
+}
+
+</style>
+</head>
+<body>
+
+ <div class="membership_fees">Membership fee <span class="color_pos">700&nbsp;HKD</span> per month, <span class="color_pos">300&nbsp;HKD</span> for students.</div>
+
+ <table width=100%>
+  <tr>
+   <td colspan=2 class="bill_desc">Monthly Balance:</td>
+   <td class="bill_value color_pos">-206&nbsp;HKD</td>
+  </tr>
+  <tr>
+   <td colspan=2 class="bill_desc">(due: <span class="color_neg">2021-06-23</span>) Rent:</td>
+   <td class="bill_value color_neg">14000&nbsp;HKD</td>
+  </tr>
+  <tr>
+   <td class="donate">Donate if you can!</td>
+   <td class="bill_desc">Bills:</td>
+   <td class="bill_value color_neg">~2000&nbsp;HKD</td>
+  </tr>
+ </table>
+
+
+
+
+
+
+ <table width=100%>
+  <tr>
+   <td class="tractorbar tractorleft">&nbsp;
+   <td>
+    <pre class="grid rowodd">            2021-02  2021-03  2021-04  2021-05  2021-06</pre>
+    
+    
+    
+    <pre class="grid ">Alex            700      700      700                  </pre>
+    
+    
+    
+    <pre class="grid ">Anders                                              478</pre>
+    
+    
+    
+    <pre class="grid rowodd">Anthony         958                                    </pre>
+    
+    
+    
+    <pre class="grid rowodd">Antonia         700      700      700      700      700</pre>
+    
+    
+    
+    <pre class="grid ">Ella                              300      300         </pre>
+    
+    
+    
+    <pre class="grid ">Felix          1000     1000     1000                  </pre>
+    
+    
+    
+    <pre class="grid rowodd">Jerry                             500                  </pre>
+    
+    
+    
+    <pre class="grid rowodd">Kerrie                   700      700      700      700</pre>
+    
+    
+    
+    <pre class="grid ">Khng            700      700      700      700      700</pre>
+    
+    
+    
+    <pre class="grid ">Kimlegend                500                           </pre>
+    
+    
+    
+    <pre class="grid rowodd">Manolis         670      670      670      670         </pre>
+    
+    
+    
+    <pre class="grid rowodd">Max             300      300      300      300      300</pre>
+    
+    
+    
+    <pre class="grid ">Meebey         1337     1337     1337     1337     1337</pre>
+    
+    
+    
+    <pre class="grid ">Neil            808      808      808      808      808</pre>
+    
+    
+    
+    <pre class="grid rowodd">Nicolas         700      700      707      700      700</pre>
+    
+    
+    
+    <pre class="grid rowodd">Philip         1000     1000     1000     1000     1000</pre>
+    
+    
+    
+    <pre class="grid ">Richard         670      670      670      670      670</pre>
+    
+   <td class="tractorbar tractorright">&nbsp;
+  </tr>
+ </table>
+
+<br>
+ <table width=100%>
+  <tr>
+   <td>&nbspc;&nbspc;&nbspc;</td>
+   <td class="bill_desc">Members loans to DSL:</td>
+   <td class="bill_value color_neg">23000&nbsp;HKD</td>
+  </tr>
+ </table>
+
+<div class="lastupdate">
+  Data last updated 2021-06-15T20:51:31+08:00
+  <a href="https://travis-ci.org/dimsumlabs/dsl-accounts/builds">
+    <img src="https://travis-ci.org/dimsumlabs/dsl-accounts.svg?branch=master">
+  </a>
+</div>
+</body>
+</html>
